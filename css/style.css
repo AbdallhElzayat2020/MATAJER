@@ -475,6 +475,7 @@ input[type="checkbox"]:checked {
 .company .title {
   font-size: 24px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .company .logos {
   display: flex;
