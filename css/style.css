@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+:root {
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+  --section-margin: 100px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*========================= 
+  ===========================Start Header */
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+} */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.navbar .menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+.navbar .logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar .search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 300px;
+}
+.navbar .search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin-left: 5px;
+  flex-grow: 1;
+}
+.navbar .search-box i {
+  color: #aaa;
+}
+.navbar .language-icon img {
+  height: 24px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .navbar .search-box {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+.sidebar {
+  z-index: 20;
+  text-align: center;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  direction: rtl;
+  text-align: right;
+}
+.sidebar a {
+  text-align: center;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*========================= 
+  ===========================  End Header */
+
+/*========================= 
+  ===========================Start Home */
+.swiper-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+}
+.swiper-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-content {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.slide-content img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.slide-content h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+}
+.slide-content p {
+  font-size: 16px;
+  color: #555;
+}
+/*========================= 
+===========================END Home */
+/*========================= 
+===========================Start boxes */
+.boxs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*========================= 
+===========================End boxes */
+/*========================= 
+===========================start Product */
+.product {
+  margin-top: 20px;
+}
+.product h1 {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.product .product_specification {
+  margin-top: 15px;
+}
+.product .product_specification ul li {
+  font-size: 16px;
+  color: #818181;
+}
+.product .product_specification span {
+  margin-top: 15px;
+  display: block;
+}
+/*========================= 
+===========================End Product */

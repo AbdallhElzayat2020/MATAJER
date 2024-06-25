@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container">
+        <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+        <div class="logo">
+          <img src="./images/logo.png" alt="Logo" />
+          <span>MATAJER</span>
+        </div>
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="بحث..." />
+        </div>
+        <div class="language-icon">
+          <img src="./images/flag.jpg" alt="Language" />
+        </div>
+      </div>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()"
+          >&times;</a
+        >
+        <a href="#">الرئيسية</a>
+        <a href="#">خدماتنا</a>
+        <a href="#">حول</a>
+        <a href="#">اتصل بنا</a>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <h1>مجموعة تبييض الاسنان</h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="./images/portfolio-1.jpg" alt="Slide 1" />
+            <h3>نتائج فورية و مذهلة</h3>
+            <p>تقنية جديدة و أمنة تماما لتبييض الأسنان في المنزل بسهولة تامة</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="./images/portfolio-1.jpg" alt="Slide 1" />
+            <h3>نتائج فورية و مذهلة</h3>
+            <p>تقنية جديدة و أمنة تماما لتبييض الأسنان في المنزل بسهولة تامة</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="./images/portfolio-1.jpg" alt="Slide 1" />
+            <h3>نتائج فورية و مذهلة</h3>
+            <p>تقنية جديدة و أمنة تماما لتبييض الأسنان في المنزل بسهولة تامة</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="./images/portfolio-1.jpg" alt="Slide 1" />
+            <h3>نتائج فورية و مذهلة</h3>
+            <p>تقنية جديدة و أمنة تماما لتبييض الأسنان في المنزل بسهولة تامة</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <!-- Swiper -->
+
+    <!-- Section 2 -->
+    <div class="boxs">
+      <div class="box">
+        <img src="./images/Ar-icone-bar.jpg.webp" alt="" />
+      </div>
+    </div>
+    <!-- Section 2 -->
+    <!--Product  -->
+    <div class="product">
+      <div class="container">
+        <h1>متبقي في المخزون فقط <span>13</span> قطعة</h1>
+        <div class="product_specification">
+          <h2>مواصفات المنتج:</h2>
+          <ul>
+            <li>-مجموعة تبييض الأسنان</li>
+            <li>- -مجموعة متكاملة توفر العناية التامة بالأسنان</li>
+            <li>--تقنية جديدة و آمنة تما لتبييض الأسنان في المنزل</li>
+            <li>-مجموعة تبييض الأسنان</li>
+            <li>-يساعد في إزالة التصبغات و يسرع من عملية التبييض</li>
+            <li>-سهل الاستخدام و يبييض الأسنان حتى ثمان درجات</li>
+          </ul>
+          <span>– تتكون المجموعة من : </span>
+          <p style="margin-top: 20px; width: 200px">
+            -جل التبييض : يساعد الجل على إزالة التصبغات الناتجة عن القهوة و
+            السجائر . نتائج مذهلة و ملحوظة من أول استخدام
+          </p>
+          <p style="margin-top: 20px; width: 200px">
+            -جهاز التبييض : يعمل جهاز الضوء على تسريع عملية التفتيح يقوم بتبييض
+            الأسنان حتى ثمان درجات
+          </p>
+          <p style="margin-top: 20px; width: 400px">
+            -معجون التبييض : معجون الأسنان المبيض الأكثر فعالية لإزالة البقع آمن
+            و لا يسبب أي حساسية فهو مصنوع من مستخلصات الأعشاب يحتوي على تركيبة
+            جل فريدة مصممة للحصول على عناية و نظافة فائقة
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Product  -->
+    <script>
+      function toggleMenu() {
+        var sidebar = document.getElementById("mySidebar");
+        if (sidebar.style.width === "250px") {
+          sidebar.style.width = "0";
+        } else {
+          sidebar.style.width = "250px";
+        }
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".swiper-container", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
