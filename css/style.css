@@ -359,7 +359,7 @@ body {
 }
 
 .payment-method:hover {
-  background-color: #f5f5f5;
+  background-color: #2e84f5;
 }
 
 /* Style the form headings */
@@ -464,3 +464,37 @@ input[type="checkbox"]:checked {
 }
 /*========================= 
 ===========================End Payment */
+/*========================= 
+===========================Start Company  */
+.company .container {
+  margin: 20px auto;
+  width: 80%;
+}
+.company .title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.company .logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.company .logos img {
+  width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+/*========================= 
+===========================End Company  */
+/*========================= 
+===========================start Footer  */
+.footer p {
+  color: #fff;
+  text-align: center;
+  background-color: #23527c;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*========================= 
+===========================End Footer  */
