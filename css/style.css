@@ -398,6 +398,8 @@ textarea {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  background-color: #ececec;
+  border-radius: 10px;
 }
 
 .form-check-input {
